@@ -3,30 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HealthBook - Doctor Appointment System</title>
+    <title>HealthCare+ | Doctor Appointment System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        --primary: #0ea5e9;
-        --primary-dark: #0284c7;
+        --primary: #0f766e; /* Teal 700 */
+        --primary-light: #14b8a6; /* Teal 500 */
+        --primary-dark: #0f766e;
         --secondary: #64748b;
-        --success: #22c55e;
-        --danger: #ef4444;
+        --accent: #f43f5e;
+        --success: #10b981;
         --warning: #f59e0b;
         --background: #f8fafc;
         --surface: #ffffff;
         --text-main: #0f172a;
         --text-muted: #64748b;
         --border: #e2e8f0;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
       }
       * {
         box-sizing: border-box;
       }
       body {
         margin: 0;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Plus Jakarta Sans', sans-serif;
         background-color: var(--background);
         color: var(--text-main);
         -webkit-font-smoothing: antialiased;
@@ -34,6 +37,13 @@
       button {
         font-family: inherit;
         cursor: pointer;
+        transition: all 0.2s;
+      }
+      button:active {
+        transform: scale(0.98);
+      }
+      input, select, textarea {
+        font-family: inherit;
       }
       /* Utility Scrollbar */
       ::-webkit-scrollbar {
